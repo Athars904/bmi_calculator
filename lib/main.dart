@@ -1,21 +1,22 @@
 import 'package:flutter/material.dart';
 import 'input_page.dart';
-import 'package:google_fonts/google_fonts.dart';
-void main() => runApp(BMICalculator());
+void main() => runApp(const BMICalculator());
 
 class BMICalculator extends StatelessWidget {
+  const BMICalculator({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData.dark().copyWith(
-        primaryColor: Color(0xFF090E21),
-        scaffoldBackgroundColor: Color(0xFF090E21),
-        appBarTheme: AppBarTheme(
+        primaryColor: const Color(0xFF090E21),
+        scaffoldBackgroundColor: const Color(0xFF090E21),
+        appBarTheme:const AppBarTheme(
           backgroundColor: Color(0xFF090E21),
           centerTitle: true,
         ),
       ),
-      home: InputPage(
+      home: const InputPage(
       ),
     );
   }
